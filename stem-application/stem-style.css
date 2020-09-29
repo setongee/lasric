@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* a{
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    background-color:#fff;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+}
+
+.body-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 70%;
+    overflow: hidden;
+}
+
+.title-bar{
+    padding: 27px 5%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color:#fff;
+    right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 99;
+    align-items: center;
+}
+
+.title-bar h1{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.title-bar .nav{
+    display: flex;
+    align-items: center;
+}
+
+.title-bar .nav p{
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.body-section{
+    width: 100%;
+}
+
+.save-draft button{
+    background-color: #333;
+    padding: 15px 25px;
+    outline-color: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+.save-draft{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+/*----------------Lasgidi Art-------------------*/
+
+.lasgidi-art{
+    width: 45%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background: url(stem.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*----------------Form Elements-----------------*/
+
+form{
+    width: 47%;
+    position: absolute;
+    right: 5%;
+    top: 50px;
+    padding: 50px 0;
+}
+
+table{
+    width: 100%;
+}
+
+table input{
+    width: 100%;
+}
+
+table th{
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+form label{
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form .details, form .sections{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+form .details input, form .details select, form .sections input, form .sections select{
+    padding: 15px;
+    border: none;
+    background-color: rgba(51, 51, 51, 0.05);
+}
+
+form button{
+    position: relative;
+    padding: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+form .line-section{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+form .section label {
+    text-transform: uppercase;
+    color: orange;
+    font-size: 16px;
+}
+
+form .section {
+    margin-bottom: 30px;
+}
+
+form .sub-section label{
+    font-weight: 400;
+}
+
+form textarea, form .sections input, form .sections select{
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    margin: 30px 0;
+    border: none;
+    background-color: rgba(51, 51, 51, 0.03);
+    resize: none;
+}
+
+form .sections input, form .sections select{
+    padding: 15px;
+}
+
+form .sub-section table input{
+    margin: 0;
+}
+
+form .sub-section table{
+    margin: 30px 0;
+}
+
+form table tr p{
+    font-size:14px;
+    padding: 0 15px;
+}

@@ -1,0 +1,512 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.grade-columns{
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+
+}
+
+.added-info{
+    background-color: #fff;
+    width: 20%;
+    padding:  30px 15px;
+    box-shadow: 10px 0 60px rgba(0, 0, 0, .05);
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    overflow-y: auto;
+    height: 100%;   
+    transition: .4s ease-in-out;
+}
+
+.added-info::-webkit-scrollbar, .grading-form::-webkit-scrollbar {
+    width: 4px;
+}
+
+.added-info::-webkit-scrollbar-track, .grading-form::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+.added-info::-webkit-scrollbar-thumb, .grading-form::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 100px;
+}
+
+
+
+.grading-form{
+    background-color: #fff;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 6;
+    overflow-y: auto;
+    height: 100%; 
+}
+
+.box{
+    width: 20px;
+    height: 1.3px;
+    background-color: #000;
+    border-radius: 100px;
+}
+
+.box:nth-child(2){
+    margin: 6px 0;
+}
+
+.toggle-menu{
+    margin-bottom: 40px;
+    margin-left: 28px;
+    cursor: pointer;
+}
+
+.menu-style{
+    stroke-width: 2px;
+}
+
+.personal-info .name-tag .name-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 15px;
+
+}
+
+.personal-info .name-tag p{
+    width: 30%;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.personal-info .name-tag{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.info{
+    display: flex;
+    margin: 20px 0;
+}
+
+.info .icon-style{
+    stroke-width: 2px;
+    height: 16px;
+    width: 16px;
+    margin: 0 30px 0 13px;
+}
+
+.info p{
+    font-size: 14px;
+}
+
+.info .detail{
+    width: 70%;
+}
+
+.info-details, .name-tag{
+    margin: 0 15px;
+}
+
+.info-details{
+    margin-bottom: 60px;
+}
+
+.uploads .title{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+.upload-list li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    background-color: rgba(0, 0, 0, .02);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.upload-list p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.upload-list button{
+    background-color: orange;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;    
+    cursor: pointer;
+}
+
+.upload-list{
+    margin: 40px 0;
+}
+
+.grading-form form{
+    position: relative;
+}
+
+.grade-form{
+    width: 75%; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 10px 0 60px rgba(0, 0, 0, .05);
+    z-index: 3;
+}
+
+.submit-form{
+    width: 19.9%;
+    height: 100vh;
+    background-color: #fff;
+    right: 0;
+    position: fixed;
+    top: 0;
+}
+
+
+/*tab styling*/
+
+.tab {
+    overflow: hidden;
+    background-color: #fff;
+
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: #888;
+}
+
+.tab button:hover {
+    background-color: rgba(0, 0, 0, .02);
+}
+
+.tab button.active {
+    border-bottom : 2px solid orange;
+    color: orange;
+    font-weight: 700;
+}
+
+.tabcontent{
+    display: none;
+    font-size: 14px;
+}
+
+.tab-section{
+    display: flex;
+    justify-content: center;
+    border-bottom : 1px solid rgba(0, 0, 0, .08);  
+    position: fixed;
+    width: 59.7%;
+    background-color: #fff;
+}
+
+.contents{
+    margin-top: 120px;
+    padding: 30px 105px;
+}
+
+.contents .tabcontent .question{
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.contents .tabcontent .answer{
+    text-align: justify;
+    line-height: 23px;
+    margin: 30px 0;
+    color: #333;
+}
+
+.contents .tabcontent .grade-score{
+    display: flex;
+    align-items: center;
+}
+
+.contents .tabcontent .grade-score p{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.contents .tabcontent .grade-score input{
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(0, 0, 0, .08);
+    text-align: center;
+    font-size: 15px;
+}
+
+.contents .content{
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    padding-bottom: 30px;
+}
+
+.submit-form .title{
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px;
+    font-weight: 700;
+    color: #555;
+}
+
+.grade-score-live{
+    height: 180px;
+    width: 180px;
+    background-color: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    border: 1px solid #999;
+    margin: 50px 0;
+}
+
+.action-btn p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.action-btn{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.action-btn button{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+}
+
+.action-btn .save-grading{
+    margin-top: 15px;
+    background-color: #444;
+    color: #fff;
+}
+
+.draft{
+    width: 100%;
+}
+
+.time-limit{
+    margin: 50px 0;
+}
+
+.time-limit p{
+    line-height: 21px;
+}
+
+.submit-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.concil-nav{
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    width: 20%;
+    z-index: 9;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, .05);
+}
+
+.concil-nav .img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.concil-nav .img img{
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.identity p{
+    width: 70%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.identity{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.custom-nav{
+    margin: 65px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-nav a{
+    text-decoration: none;
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+.custom-nav a.active{
+    color: orange;
+    font-weight: bold;
+}
+
+.concil-nav button{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+}
+
+.identity, .custom-nav, .logout{
+    width: 70%;
+}
+
+.overlay{
+    height: 100vh;
+    width: 80%;
+    background-color: rgba(0, 0, 0, .1);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+}
+
+.shift{
+    left: 20%;
+}
+
+.high{
+    z-index: 2;
+    transition-delay: .4s;
+}
+
+table{
+    width: 100%;
+}
+
+table input{
+    width: 100%;
+}
+
+table th{
+    font-size: 14px;
+    padding: 10px;
+    width: 33.33%;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td{
+    padding: 5px 10px;
+    text-align: left;
+}
+
+table tr.tab-4 th:first-child{
+    width: 5%;
+}
+
+.answer{
+    display: flex;
+}
+
+.answer .icon {
+    width: 40px;
+    position: relative;
+}
+
+.answer .icon .icon-style{
+    position: absolute;
+    left: 0;
+    animation: lead 1.5s ease-in-out infinite;
+    z-index: -1;
+}
+
+@keyframes lead {
+    0%{
+        left: 0;
+    }
+
+    50%{
+        left: 10px;
+    }
+
+    100%{
+        left: 0;
+    }
+}
+

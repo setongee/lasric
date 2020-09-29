@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasric Form -Innovation</title>
+    <link rel="stylesheet" href="form-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-wrap">
+
+    <div class="wrapper">
+
+        <!--title bar-->
+        
+        <div class="title-bar">
+
+            <div class="title">
+
+                <h1>applicant details</h1>
+
+            </div>
+
+            <div class="page-step">
+                <div class="step-1 active" OnClick=" location.href='form-innovation-1.html' ">1</div>
+                <div class="line-t"></div>
+                <div class="step-2" OnClick=" location.href='form-innovation-2.html' ">2</div>
+            </div>
+
+            <div class="nav">
+
+                <div class="save-draft">
+                    Want to continue later?
+                    <button>Save Draft</button>
+                </div>
+
+                <p style="color: orange;">Dashboard</p>
+
+            </div>
+
+        </div>
+
+        <div class="body-section">
+
+            <!--lasgidi art-->
+
+            <div class="lasgidi-art"></div>
+
+            <!--innovation form 1 breakdown-->
+
+            <form action="/form-innovation-2.html">
+
+                <div class="details">
+                    <label>Surname</label>
+                    <input type="text" name="surname" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Firstname</label>
+                    <input type="text" name="firstname" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Other Names</label>
+                    <input type="text" name="other" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option value="">-- None Selected --</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="details">
+                    <label>Are you a citizen of Nigeria?</label>
+                    <select name="nationality">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>                
+
+                <div class="details">
+                    <label>Age</label>
+                    <input type="number" name="age" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Phone Number</label>
+                    <input type="number" name="phone-1" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Alternative Phone Number</label>
+                    <input type="number" name="phone-2" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Linkedin Profile</label>
+                    <input type="text" name="linkedin" value="https://www.linkedin.com/in/" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>State of Residence</label>
+                    <input type="text" name="residence" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Local Govt. of Residence</label>
+                    <input type="text" name="local-govt" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Valid means of identification (LASRRA Card is acceptable).</label>
+                    <input type="file" name="id-card" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label> Do you have any criminal records?</label>
+                    <select name="criminal">
+                        <option value="yes">Yes</option>
+                        <option value="no" selected>No</option>
+                    </select>
+                </div>
+
+                <div class="details">
+                    <label>Evidence of payment of personal income tax till date (if you are gainfully employed).</label>
+                    <input type="file" name="tax-pay" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Please provide a letter of confirmation of your account status with a recognised commercial bank.</label>
+                    <input type="file" name="confirmation" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Please provide reference letters from at least 2 people that have been resident in Lagos in the past 10-15 years.</label>
+                    <input type="file" name="ref" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Do you or your startup have any pending lawsuits in any Nigerian or other court of law? If yes, Please provide full details of any such lawsuit.</label>
+                   <select name="lawsuit" id="select-option">
+                       <option value="no">No</option>
+                       <option value="yes">Yes</option>
+                   </select>
+                </div>
+
+                <div class="details">
+                    <label>Next of Kins Fullname</label>
+                    <input type="text" name="kins-name" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Relationship with Kin</label>
+                    <input type="text" name="relationship-kin" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Have you ever received a grant for this business or idea from LASRIC?</label>
+                    <input type="text" name="grant" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Company Name</label>
+                    <input type="text" name="company" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Company Website. if any?</label>
+                    <input type="text" name="website" value="https://" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>When was the company founded</label>
+                    <input type="text" name="founded" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Which of the following sectors does your company belong to?</label>
+                    <select name="sector">
+                        <option value="">-- None Selected --</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="education">Education</option>
+                        <option value="health">Health</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="details">
+                    <label>What's your business model? (B2B, B2C, B2G B2B2C etc.)</label>
+                    <input type="text" name="model" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>What stage is your startup in? (Idea, Pre-Seed, Seed, Growth, Scale)</label>
+                    <input type="text" name="stage" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Is your company incorporated? If yes, please upload certificate of incorporation</label>
+                    <input type="file" name="cac" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Please upload company's memorandum of association</label>
+                    <input type="file" name="cac-doc" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Please provide full details of any post-incorporation applications i.e. alteration of CAC documents, if any.</label>
+                    <input type="file" name="cac-doc-2" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Please upload form CAC 7 for particulars of directors</label>
+                    <input type="file" name="cac-doc-alt" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Please upload your tax clearance certificate</label>
+                    <input type="file" name="tax" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Kindly provide evidence of payment of annual returns till date.</label>
+                    <input type="file" name="returns" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>Please provide proof of any existing patent, trademark or copyright owned by the company/innovator(s).</label>
+                    <input type="file" name="patent" placeholder="Please Enter...">
+                </div>
+
+                <div class="details">
+                    <label>What’s your role in the organisation</label>
+                    <select name="organisation">
+                        <option value="">-- None Selected --</option>
+                        <option value="idea-owner">Idea Owner?</option>
+                        <option value="team-member">Team Member</option>
+                        <option value="other">Other?</option>
+                    </select>
+                </div>
+
+                <div class="details">
+                    <label>List your team members</label>
+                    <table> 
+
+                        <tr>
+                            <th>Fullname</th>
+                            <th>Education</th>
+                            <th>Key Accomplishments</th>
+                            <th>LinkedIn Profiles</th>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text" value="https://www.linkedin.com/in/"></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div class="details">
+                    <label>What’s your revenue in the last 12 months?</label>
+                    <input type="number" name="revenue-12" value="N" placeholder="Please Enter...">
+                </div>
+
+                <button name="submit">Proceed</button>
+
+            </form>
+
+        </div>
+        
+        
+        
+    </div>
+    
+    <script src="./form.js"></script>
+       
+</body>
+</html>
